@@ -8,7 +8,7 @@ exports.postProduct = async (req, res) => {
     name: req.body.name,
   };
   await Product.create(product);
-  res.redirect("/products");
+  res.json("ok");
 };
 
 exports.getProducts = async (req, res) => {
